@@ -19,7 +19,7 @@ func (s ParcelStore) Add(p Parcel) (int, error) {
 		p.Client, p.Status, p.Address, p.CreatedAt,
 	)
 	if err != nil {
-		return 0, fmt.Errorf("failed to insert parcel: %w", err)
+		return 0, fmt.Errorf("failed to  insert parcel: %w", err)
 	}
 	// верните идентификатор последней добавленной записи
 
